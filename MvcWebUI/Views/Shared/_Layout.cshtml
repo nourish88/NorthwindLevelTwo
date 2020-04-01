@@ -1761,7 +1761,21 @@
                     <!-- end:: Header Topbar -->
                 </div>
                 <div style="padding-top:0px!important;" class="kt-content  @*kt-grid__item kt-grid__item--fluid*@" id="kt_content">
-                    @RenderBody()
+                    <div class="row">
+                        <div class="col-3">
+
+@await Component.InvokeAsync("CategoryList")
+
+
+
+
+                        </div>
+                        <div class="col-9">@RenderBody()</div>
+
+
+
+                    </div>
+                    
                 </div>
                 <!-- end:: Header -->
                 <!-- begin:: Footer -->
