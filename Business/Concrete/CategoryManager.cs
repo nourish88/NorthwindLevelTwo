@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,15 +10,15 @@ namespace Business.Concrete
     public class CategoryManager : ICategoryService
     { 
 
-       private ICategoryService _categoryService;
-        public CategoryManager(ICategoryService categoryService)
+       private ICategoryDal _categorydal;
+        public CategoryManager(ICategoryDal categorydal)
         {
-            _categoryService= categoryService;
+            _categorydal = categorydal;
         }
 
         public List<Category> GetAll()
         {
-            return _categoryService.GetAll();
+            return _categorydal.GetList();
         }
     }
 }
