@@ -3,8 +3,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Product List</h1>
-
+    <h1>Ürünler</h1>
+<div class="pull-right" >
+    <a class=" btn btn-sm btn-primary"  asp-controller="Cart" asp-action="Index"><i class="fa fa-right"></i>Sepete Git</a>
+</div>
 <table class="table table-responsive">
 @foreach (var item in Model.Products)
 {
@@ -14,6 +16,7 @@
         <td>@item.QuantityPerUnit</td>
         <td>@item.UnitPrice</td>
         <td>@item.UnitsInStock</td>
+        <td  > <a   class="btn btn-sm btn-success" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId">Sepete ekle</a>   </td>
     </tr>
 }
 

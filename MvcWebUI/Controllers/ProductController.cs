@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
+using MvcWebUI.Base;
 using MvcWebUI.Models;
 
 namespace MvcWebUI.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         private IProductService _productService;
         public ProductController(IProductService productService)

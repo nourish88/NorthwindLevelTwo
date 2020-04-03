@@ -1,13 +1,6 @@
 ﻿<!DOCTYPE html>
-
-
 <html lang="en">
-
-<!-- begin::Head -->
 <head>
-
-    <!--begin::Base Path (base relative path for assets of this page) -->
-    <!--end::Base Path -->
     <meta charset="utf-8" />
     <title>Metronic | Dashboard</title>
     <meta name="description" content="Updates and statistics">
@@ -73,7 +66,7 @@
     <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
         <div class="kt-header-mobile__logo">
             <a href="demo1/index.html">
-             
+
                 <img style="height:50px;width:50px" alt="Logo" src="~/css/img/logo_2.png" />
             </a>
         </div>
@@ -96,7 +89,7 @@
                 <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
                     <div class="kt-aside__brand-logo">
                         <a href="demo1/index.html">
-                            <img style="height:60px;width:60px"alt="Logo" src="~/css/img/logo_2.png" />
+                            <img style="height:60px;width:60px" alt="Logo" src="~/css/img/logo_2.png" />
                         </a>
                     </div>
                     <div class="kt-aside__brand-tools">
@@ -699,7 +692,7 @@
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/bootstrap-multipleselectsplitter.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Multiple Select Splitter</span></a></li>
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/bootstrap-select.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Bootstrap Select</span></a></li>
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/select2.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Select2</span></a></li>
-                                                   
+
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/nouislider.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">noUiSlider</span></a></li>
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/form-repeater.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Form Repeater</span></a></li>
                                                     <li class="kt-menu__item " aria-haspopup="true"><a href="demo1/crud/forms/widgets/ion-range-slider.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Ion Range Slider</span></a></li>
@@ -908,15 +901,15 @@
                         <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
                             <ul class="kt-menu__nav ">
                                 <li class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open kt-menu__item--here kt-menu__item--active" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                                    <a href="javascript:;" class="kt-menu__link "><span class="kt-menu__link-text"><i class="fa fa-home"></i>Anasayfa</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <a asp-controller="Product" asp-action="Index" class="kt-menu__link "><span class="kt-menu__link-text"><i class="fa fa-home"></i>Anasayfa</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 
                                 </li>
                                 <li class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open kt-menu__item--here kt-menu__item--active" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
                                     <h3 style="padding-top:5px;font-size:2.2rem">  |</h3>
 
                                 </li>
-                                <li  style="background-color:white!important"  class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu  "  >
-                                    <h3 style="margin-bottom: 0px;background-color:white!important" class="kt-menu__link "><span style="font-weight:bold;color:navy;font-size:1.4rem" class="kt-menu__link-text">JGNK Fotoğraf Arşiv Uygulaması</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                <li style="background-color:white!important" class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu  ">
+                                    <h3 style="margin-bottom: 0px;background-color:white!important" class="kt-menu__link "><span style="font-weight:bold;color:navy;font-size:1.4rem" class="kt-menu__link-text">Ürün Uygulaması</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
 
                                 </li>
 
@@ -974,9 +967,9 @@
                                 </span>
 
                                 <!--
-                        Use dot badge instead of animated pulse effect:
-                        <span class="kt-badge kt-badge--dot kt-badge--notify kt-badge--sm kt-badge--brand"></span>
-                    -->
+                                    Use dot badge instead of animated pulse effect:
+                                    <span class="kt-badge kt-badge--dot kt-badge--notify kt-badge--sm kt-badge--brand"></span>
+                                -->
                             </div>
                             <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
                                 <form>
@@ -1761,10 +1754,45 @@
                     <!-- end:: Header Topbar -->
                 </div>
                 <div style="padding-top:0px!important;" class="kt-content  @*kt-grid__item kt-grid__item--fluid*@" id="kt_content">
+                    @if (TempData["message"] != null || TempData["mesaj"] != null)
+                    {
+                        <div class="row">
+                            <div class="col-sm-3 ">
+
+                            </div>
+
+                            <div class="col-sm-9">
+                                @if (TempData["message"] != null)
+                                {<div class="alert alert-success">@TempData["message"]</div>
+
+                            }
+                            else
+                            {<div class="alert alert-danger">
+                                    @TempData["mesaj"]
+                                </div>
+                            }
+                            </div>
+
+                        </div>
+
+                    }
+
+
+
+                    <div class="row">
+
+                        <div class="col-sm-12">
+
+                            <div class="alert-parent" id="alert-parent">
+
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-3">
 
-@await Component.InvokeAsync("CategoryList")
+                            @await Component.InvokeAsync("CategoryList")
 
 
 
@@ -1775,429 +1803,29 @@
 
 
                     </div>
-                    
+
                 </div>
                 <!-- end:: Header -->
                 <!-- begin:: Footer -->
-                
-                    <div style="bottom:5px; text-align:center; position:fixed; width:100%;"class="kt-footer kt-grid__item " id="kt_footer">
-                        <div class="kt-footer__copyright">
-                           Jandarma Genel Komutanlığı MEBS Başkanlığı © @DateTime.Now.Year
-                        </div>
-                        <div class="kt-footer__menu">
-                            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">İletişim</a>
-                            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Hakkımızda</a>
-                            <a style="color:white" href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">             ..................                     </a>
-                         
-                        </div>
-                    </div>
-                
-                    <!-- end:: Footer -->
-                </div>
-            </div>
-    </div>
-
-    <!-- end:: Page -->
-    <!-- begin::Quick Panel -->
-    <div id="kt_quick_panel" class="kt-quick-panel">
-        <a href="#" class="kt-quick-panel__close" id="kt_quick_panel_close_btn"><i class="flaticon2-delete"></i></a>
-        <div class="kt-quick-panel__nav">
-            <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand  kt-notification-item-padding-x" role="tablist">
-                <li class="nav-item active">
-                    <a class="nav-link active" data-toggle="tab" href="#kt_quick_panel_tab_notifications" role="tab">Notifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#kt_quick_panel_tab_logs" role="tab">Audit Logs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#kt_quick_panel_tab_settings" role="tab">Settings</a>
-                </li>
-            </ul>
-        </div>
-        <div class="kt-quick-panel__content">
-            <div class="tab-content">
-                <div class="tab-pane fade show kt-scroll active" id="kt_quick_panel_tab_notifications" role="tabpanel">
-                    <div class="kt-notification">
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-line-chart kt-font-success"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New order has been received
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    2 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-box-1 kt-font-brand"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New customer is registered
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    3 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-chart2 kt-font-danger"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    Application has been approved
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    3 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-image-file kt-font-warning"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New file has been uploaded
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    5 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-bar-chart kt-font-info"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New user feedback received
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    8 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-pie-chart-2 kt-font-success"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    System reboot has been successfully completed
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    12 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-favourite kt-font-danger"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New order has been placed
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    15 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item kt-notification__item--read">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-safe kt-font-primary"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    Company meeting canceled
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    19 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-psd kt-font-success"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New report has been received
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    23 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon-download-1 kt-font-danger"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    Finance report has been generated
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    25 hrs ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon-security kt-font-warning"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New customer comment recieved
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    2 days ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification__item">
-                            <div class="kt-notification__item-icon">
-                                <i class="flaticon2-pie-chart kt-font-warning"></i>
-                            </div>
-                            <div class="kt-notification__item-details">
-                                <div class="kt-notification__item-title">
-                                    New customer is registered
-                                </div>
-                                <div class="kt-notification__item-time">
-                                    3 days ago
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="tab-pane fade kt-scroll" id="kt_quick_panel_tab_logs" role="tabpanel">
-                    <div class="kt-notification-v2">
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon-bell kt-font-brand"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    5 new user generated report
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Reports based on sales
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon2-box kt-font-danger"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    2 new items submited
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    by Grog John
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon-psd kt-font-brand"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    79 PSD files generated
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Reports based on sales
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon2-supermarket kt-font-warning"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    $2900 worth producucts sold
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Total 234 items
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon-paper-plane-1 kt-font-success"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    4.5h-avarage response time
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Fostest is Barry
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon2-information kt-font-danger"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    Database server is down
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    10 mins ago
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon2-mail-1 kt-font-brand"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    System report has been generated
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Fostest is Barry
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="kt-notification-v2__item">
-                            <div class="kt-notification-v2__item-icon">
-                                <i class="flaticon2-hangouts-logo kt-font-warning"></i>
-                            </div>
-                            <div class="kt-notification-v2__itek-wrapper">
-                                <div class="kt-notification-v2__item-title">
-                                    4.5h-avarage response time
-                                </div>
-                                <div class="kt-notification-v2__item-desc">
-                                    Fostest is Barry
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="tab-pane kt-quick-panel__content-padding-x fade kt-scroll" id="kt_quick_panel_tab_settings" role="tabpanel">
-                    <form class="kt-form">
-                        <div class="kt-heading kt-heading--sm kt-heading--space-sm">Customer Care</div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Enable Notifications:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--success kt-switch--sm">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_1">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Enable Case Tracking:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--success kt-switch--sm">
-                                    <label>
-                                        <input type="checkbox" name="quick_panel_notifications_2">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-last form-group-xs row">
-                            <label class="col-8 col-form-label">Support Portal:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--success kt-switch--sm">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_2">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="kt-separator kt-separator--space-md kt-separator--border-dashed"></div>
-                        <div class="kt-heading kt-heading--sm kt-heading--space-sm">Reports</div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Generate Reports:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--danger">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_3">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Enable Report Export:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--danger">
-                                    <label>
-                                        <input type="checkbox" name="quick_panel_notifications_3">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-last form-group-xs row">
-                            <label class="col-8 col-form-label">Allow Data Collection:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--danger">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_4">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="kt-separator kt-separator--space-md kt-separator--border-dashed"></div>
-                        <div class="kt-heading kt-heading--sm kt-heading--space-sm">Memebers</div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Enable Member singup:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--brand">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_5">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-xs row">
-                            <label class="col-8 col-form-label">Allow User Feedbacks:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--brand">
-                                    <label>
-                                        <input type="checkbox" name="quick_panel_notifications_5">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-last form-group-xs row">
-                            <label class="col-8 col-form-label">Enable Customer Portal:</label>
-                            <div class="col-4 kt-align-right">
-                                <span class="kt-switch kt-switch--sm kt-switch--brand">
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="quick_panel_notifications_6">
-                                        <span></span>
-                                    </label>
-                                </span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <!-- end:: Footer -->
             </div>
         </div>
     </div>
 
-    <!-- end::Quick Panel -->
-    <!-- begin::Scrolltop -->
+
+    <div style="position:static;display:inline" class="kt-footer kt-grid__item" id="kt_footer">
+        <div class="row ">
+            <div style="display:inline-block; text-align:center" class="kt-footer__copyright kt-align-center col-sm-12 ">
+                Jandarma Genel Komutanlığı MEBS Başkanlığı © @DateTime.Now.Year
+            </div>
+        </div>
+        @*<div class="kt-footer__menu">
+            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">İletişim</a>
+            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Hakkımızda</a>
+            <a style="color:white" href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">             ..................                     </a>
+
+        </div>*@
+    </div>
     <div id="kt_scrolltop" class="kt-scrolltop">
         <i class="fa fa-arrow-up"></i>
     </div>
@@ -2233,7 +1861,6 @@
     <script src="~/js/vendors/general/tooltip.js/dist/umd/tooltip.min.js"></script>
     <script src="~/js/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
     <script src="~/js/vendors/general/sticky-js/dist/sticky.min.js"></script>
-
     <script src="~/js/vendors/general/jquery-form/dist/jquery.form.min.js"></script>
     <script src="~/js/vendors/general/block-ui/jquery.blockUI.js"></script>
     <script src="~/js/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
@@ -2247,18 +1874,18 @@
     <script src="~/js/vendors/custom/js/vendors/bootstrap-switch.init.js"></script>
     <script src="~/js/vendors/general/select2/dist/js/select2.full.js"></script>
     <script src="~/js/vendors/general/ion-rangeslider/js/ion.rangeSlider.js"></script>
-    @*<script src="~/js/js/demo1/pages/crud/forms/widgets/typeahead.js"></script>*@
-    @*<script src="~/js/vendors/general/handlebars/dist/amd/handlebars.js"></script>*@
+    <script src="~/js/js/demo1/pages/crud/forms/widgets/typeahead.js"></script>
+    <script src="~/js/vendors/general/handlebars/dist/amd/handlebars.js"></script>
     <script src="~/js/vendors/general/inputmask/dist/jquery.inputmask.bundle.js"></script>
     <script src="~/js/vendors/general/inputmask/dist/inputmask/inputmask.date.extensions.js"></script>
     <script src="~/js/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js">
-    <script src="~/js/vendors/general/owl.carousel/dist/owl.carousel.js"</script>
+        <script src="~/js/vendors/general/owl.carousel/dist/owl.carousel.js"</script>
     <script src="~/js/vendors/general/autosize/dist/autosize.js"></script>
     <script src="~/js/vendors/general/clipboard/dist/clipboard.min.js"></script>
     <script src="~/js/vendors/general/dropzone/dist/dropzone.js"></script>
     <script src="~/js/vendors/general/markdown/lib/markdown.js"></script>
     <script src="~/js/js/demo1/pages/crud/forms/widgets/bootstrap-markdown.js"></script>
-    @*<script src="~/js/vendors/custom/js/vendors/bootstrap-markdown.init.js"></script>*@
+    <script src="~/js/vendors/custom/js/vendors/bootstrap-markdown.init.js"></script>
     <script src="~/js/vendors/general/bootstrap-notify/bootstrap-notify.min.js"></script>
     <script src="~/js/vendors/custom/js/vendors/bootstrap-notify.init.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
@@ -2266,24 +1893,27 @@
     <script src="~/js/vendors/custom/js/vendors/jquery-validation.init.js"></script>
     <script src="~/js/js/demo1/pages/components/extended/toastr.min.js"></script>
     <script src="~/js/vendors/custom/vendors/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js"></script>
-    @*<script src="~/js/js/demo1/pages/components/utils/idle-timer.min.js"></script>*@
+    <script src="~/js/js/demo1/pages/components/utils/idle-timer.min.js"></script>
     <script src="~/js/vendors/general/waypoints/lib/jquery.waypoints.js"></script>
     <script src="~/js/vendors/general/counterup/jquery.counterup.js"></script>
     <script src="~/js/vendors/general/es6-promise-polyfill/promise.min.js"></script>
     <script src="~/js/vendors/general/sweetalert2/dist/sweetalert2.min.js"></script>
-
-
+    <script src="~/js/js/demo1/pages/components/extended/toastr.min.js"></script>
+    <script src="~/js/vendors/general/toastr/nuget/content/scripts/toastr.js"></script>
     <script src="~/js/js/demo1/scripts.bundle.js"></script>
     <script src="~/js/vendors/custom/fullcalendar/fullcalendar.bundle.js"></script>
-    <script src="./assets/vendors/general/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
-    @*<script src="./assets/vendors/custom/js/vendors/sweetalert2.init.js" type="text/javascript"></script>
-    <script src="./assets/vendors/general/jquery.repeater/src/lib.js" type="text/javascript"></script>*@
-    <script src="./assets/vendors/general/jquery.repeater/src/jquery.input.js" type="text/javascript"></script>
-    <script src="./assets/vendors/general/jquery.repeater/src/repeater.js" type="text/javascript"></script>
-    <script src="./assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
-  
-
- 
+    <script src="~/js/sweetalert2.all.min.js"></script>
+    <script src="~/js/vendors/general/dompurify/dist/purify.js"></script>
+    <script src="~/js/vendors/custom/js/vendors/sweetalert2.init.js"></script>
+    <script src="~/js/vendors/general/jquery.repeater/src/lib.js"></script>
+    <script src="~/js/vendors/general/jquery.repeater/src/jquery.input.js"></script>
+    <script src="~/js/CustomAlerts/CustomAlerts.js"></script>
+    <script src="~/js/CustomModalFrameBuilder/ModalFrameBuilder.js"></script>
+    @Html.Raw(@TempData["ShowInlineMessage"])
+    @Html.Raw(@TempData["ShowToastrMessage"])
+    @Html.Raw(@TempData["ShowModalMessage"])
+    @Html.Raw(@TempData["ShowTimerMessage"])
+    @RenderSection("scripts", required: false)
 </body>
 
 <!-- end::Body -->
