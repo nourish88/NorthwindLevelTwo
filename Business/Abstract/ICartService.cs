@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 using Entities.DomainModels;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,9 @@ namespace Business.Abstract
 {
    public  interface ICartService
     {
-        void AddToCart(Cart cart, Product product);
-        void RemoveFromCart(Cart cart, int productId);
-        List<CartLine> list(Cart cart);
+        IResult AddToCart(Cart cart, Product product);
+        IResult RemoveFromCart(Cart cart, int productId);
+        IDataResult<List<CartLine>> list(Cart cart);
 
     }
 }

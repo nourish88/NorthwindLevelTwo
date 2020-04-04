@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -16,19 +18,19 @@ namespace Business.Concrete
             _productDal = productDal;
           
         }
-        public List<Product> GetAll()
+        public IDataResult<List<Product>> GetAll()
         {
-            return _productDal.GetList();
-        }
-       
-        public List<Product> GetByCategory(int categoryId)
-        {
-            return _productDal.GetList(p=>p.CategoryId== categoryId);
+            return  new SuccessDataResult<List<Product>>(_productDal.GetList());
         }
 
-        public Product GetById(int productId)
+        public IDataResult<List<Product>> GetByCategory(int categoryId)
         {
-            return _productDal.Get(p => p.ProductId == productId); ;
+            return new SuccessDataResult<List<Product>> (_productDal.GetList(p=>p.CategoryId== categoryId),Messages.ProductListed);
+        }
+
+        public IDataResult<Product> GetById(int productId)
+        {
+            return new SuccessDataResult<Product>( _productDal.Get(p => p.ProductId == productId));
         }
     }
 }

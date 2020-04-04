@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -16,9 +18,9 @@ namespace Business.Concrete
             _categorydal = categorydal;
         }
 
-        public List<Category> GetAll()
+        public IDataResult<List<Category>> GetAll()
         {
-            return _categorydal.GetList();
+            return   new SuccessDataResult<List<Category>>( _categorydal.GetList(),Messages.CommonSuccessMessage);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DomainModels;
 using System;
@@ -10,27 +11,28 @@ namespace Business.Concrete
 {
     public class CartManager : ICartService
     {
-        public void AddToCart(Cart cart, Product product)
+        public IResult AddToCart(Cart cart, Product product)
         {
             var cartline = cart.CartLines?.FirstOrDefault(x => x.Product.ProductId == product.ProductId);
             if (cartline != null)
             {
                 cartline.Quantity++;
-                return;
+                return new SuccessResult();
             }
 
             cart.CartLines.Add(new CartLine { Product = product, Quantity = 1 });
-
+            return new SuccessResult();
         }
 
-        public List<CartLine> list(Cart cart)
+        public IDataResult<List<CartLine>> list(Cart cart)
         {
-            return cart.CartLines;
+            return   new SuccessDataResult<List<CartLine>> (cart.CartLines);
         }
 
-        public void RemoveFromCart(Cart cart, int productId)
+        public IResult RemoveFromCart(Cart cart, int productId)
         {
             cart.CartLines.Remove(cart.CartLines.FirstOrDefault(x => x.Product.ProductId == productId));
+            return new SuccessResult();
         }
     }
 }
