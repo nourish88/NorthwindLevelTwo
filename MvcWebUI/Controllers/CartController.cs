@@ -1,6 +1,7 @@
 ﻿
 using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MvcWebUI.Base;
 using MvcWebUI.Helpers;
@@ -21,9 +22,15 @@ namespace MvcWebUI.Controllers
             _productService = productService;
         }
         public IActionResult AddToCart( int productId)
-        {
+        {   // temel session implementasyonu
+            //HttpContext.Session.SetInt32("data", 1);
+            //var aa= HttpContext.Session.GetInt32("data");
+            //HttpContext.Session.SetString("data2", "1");
+            //var bb = HttpContext.Session.GetString("data2");
 
-            Product product = _productService.GetById(productId);
+
+
+            Product product = _productService.GetById(productId).Data;
             var cart = _cartSessionHelper.GetCart("cart");
             _cartService.AddToCart(cart, product);
             _cartSessionHelper.SetCart("cart", cart);      
@@ -37,8 +44,9 @@ namespace MvcWebUI.Controllers
           
             var cart = _cartSessionHelper.GetCart("cart");
             _cartService.RemoveFromCart(cart,productId);
-            _cartSessionHelper.SetCart("cart", cart);
-            TempData.Add("mesaj", "Sepetten çıkarıldı.");
+            _cartSessionHelper.SetCart("cart", cart);// custom implementasyonu
+            //TempData.Add("mesaj", "Sepetten çıkarıldı.");// tempdata implementasyonu
+            ShowInlineMessage( "Sepetten çıkarıldı",MessageType.Success);
             return RedirectToAction("Index", "Cart");
 
         }
